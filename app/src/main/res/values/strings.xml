@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">HW4</string>
+    <string name="enter_latp1">Enter the latitude for P1</string>
+    <string name="enter_latp2">Enter the latitude for P2</string>
+    <string name="enter_lonp1">Enter the longitude for P1</string>
+    <string name="enter_lonp2">Enter the longitude for P2</string>
+    <string name="calc_button">Calculate</string>
+    <string name="clear_button">Clear</string>
+    <string name="dist">Distance: </string>
+    <string name="bear">Bearing: </string>
+    <string name="title_activity_settings_screen">SettingsScreen</string>
+    <string name="distChoices">Distance Units:</string>
+    <string name="bearChoices">Bearing Units:</string>
+    <string-array name="distUnits">
+        <item>Kilometers</item>
+        <item>Miles</item>
+    </string-array>
+    <string-array name="bearUnits">
+        <item>Degrees</item>
+        <item>Mils</item>
+    </string-array>
+    <string name="title_activity_history">HistoryActivity</string>
+</resources>

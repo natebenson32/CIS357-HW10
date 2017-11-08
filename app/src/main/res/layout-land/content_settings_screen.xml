@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.test.hw4.SettingsScreen"
+    tools:showIn="@layout/activity_settings_screen">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:id="@+id/left_side"
+            android:layout_width="296dp"
+            android:layout_height="287dp"
+            tools:layout_conversion_absoluteHeight="287dp"
+            tools:layout_conversion_absoluteWidth="296dp"
+            tools:layout_conversion_absoluteX="0dp"
+            tools:layout_conversion_absoluteY="0dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="0dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="0dp">
+
+            <TextView
+                android:id="@+id/distLab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="13dp"
+                android:text="@string/distChoices"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/distChoices"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/distLab"
+                android:layout_marginTop="14dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/right_side"
+            android:layout_width="280dp"
+            android:layout_height="287dp"
+            tools:layout_conversion_absoluteHeight="287dp"
+            tools:layout_conversion_absoluteWidth="296dp"
+            tools:layout_conversion_absoluteX="296dp"
+            tools:layout_conversion_absoluteY="0dp"
+            app:layout_constraintLeft_toRightOf="@+id/left_side"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintTop_toTopOf="@+id/left_side"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="0dp"
+            app:layout_constraintRight_toRightOf="parent">
+
+            <TextView
+                android:id="@+id/bearLab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="14dp"
+                android:text="@string/bearChoices"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/bearChoices"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/bearLab"
+                android:layout_marginTop="13dp" />
+        </RelativeLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+</RelativeLayout>
